@@ -56,6 +56,16 @@ The WHOOP sensor is an optional presentation layer. It reads presentation state 
   - `read:sleep`
   - `read:workout`
 
+## Judge verification
+
+No WHOOP account or credentials are needed for the non-live verification path:
+
+```bash
+./scripts/verify-demo.sh
+```
+
+This runs all 214 tests, builds the release products, packages and verifies the signed menu-bar app without installing or launching it, and validates the sanitized local status output. The tests use isolated fixtures and do not modify the judge's Codex app.
+
 ## Setup
 
 1. Create and authorize a WHOOP developer application.
