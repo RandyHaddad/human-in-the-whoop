@@ -4,6 +4,8 @@ Human in the Whoop is a local macOS companion for WHOOP and Codex.
 
 ![WHOOP band around the Codex logo](docs/media/hero.png)
 
+[Watch the 24-second demo](docs/media/human-in-the-whoop-demo.mp4).
+
 ## What it does
 
 - The latest eligible WHOOP Recovery score sets Charge. Recovery 72 becomes 72/100.
