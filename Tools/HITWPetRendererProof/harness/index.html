@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Human in the Whoop — pet mechanics proof</title>
+    <link rel="stylesheet" href="/harness.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">Human in the Whoop</p>
+        <h1>Native pet mechanics proof</h1>
+        <p class="note">
+          These native Codex bodies are temporary test variants. They prove atlas
+          switching and lifecycle preservation; they are not the final health art.
+        </p>
+      </header>
+
+      <section class="proof-grid">
+        <div class="pet-stage">
+          <div id="pet" role="img" aria-label="Codex pet mechanics proof"></div>
+        </div>
+
+        <dl class="readout">
+          <div><dt>Feature</dt><dd id="enabled">Off</dd></div>
+          <div><dt>Charge</dt><dd id="charge">—</dd></div>
+          <div><dt>Pet</dt><dd id="identity">stock</dd></div>
+          <div><dt>Body tier</dt><dd id="tier">native</dd></div>
+          <div><dt>Tier revision</dt><dd id="tier-revision">0</dd></div>
+          <div><dt>Codex lifecycle</dt><dd id="lifecycle">idle</dd></div>
+          <div><dt>Pet row</dt><dd id="effective-state">idle</dd></div>
+          <div><dt>Pending refill jump</dt><dd id="pending">no</dd></div>
+        </dl>
+      </section>
+
+      <section class="controls" aria-label="Proof controls">
+        <label>
+          Codex status
+          <select id="lifecycle-select">
+            <option value="idle">No activity / idle</option>
+            <option value="running">Running</option>
+            <option value="waiting">Needs input</option>
+            <option value="review">Ready</option>
+            <option value="failed">Blocked</option>
+          </select>
+        </label>
+        <div class="button-row">
+          <button data-snapshot='{"enabled":true,"petEnabled":true,"petIdentity":"battery","charge":72}'>72 energetic</button>
+          <button data-snapshot='{"enabled":true,"petEnabled":true,"petIdentity":"battery","charge":66}'>66 normal</button>
+          <button data-snapshot='{"enabled":true,"petEnabled":true,"petIdentity":"battery","charge":33}'>33 tired</button>
+          <button data-snapshot='{"enabled":true,"petEnabled":true,"petIdentity":"battery","charge":0}'>0 exhausted</button>
+          <button data-snapshot='{"enabled":true,"petEnabled":true,"petIdentity":"whoop-sensor-b","charge":72}'>Sensor B</button>
+          <button id="refill">+20 workout refill</button>
+          <button id="off">Off</button>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/harness.mjs"></script>
+  </body>
+</html>
