@@ -126,10 +126,12 @@ To remove the hook and stop the companion:
 - Off or unavailable state falls back to regular Codex.
 - No WHOOP token, health record, device identifier, local database, or copied Codex binary is stored in this repository.
 
-## Codex work on this project
+## How I used Codex + GPT-5.6
 
-Codex wrote and changed the Swift, SwiftUI, shell, JavaScript, and test code. It implemented the Codex prompt hook, WHOOP token refresh, Charge accounting, workout deduplication, the menu-bar companion, and the isolated pet-renderer proof. The proof modifies a copied Codex renderer harness; it does not modify the everyday Codex application.
+Codex did everything (forms, WHOOP integration, pet, computer use, code, tests, and this submission). I just did the auth.
 
-Codex ran the 214-test suite, rendered the menu screenshot, generated the architecture image, assembled and sanitized the public repository, and completed the Devpost form through computer use. The human supplied direction, chose the product behavior, and handled required sign-in and OAuth authorization.
+GPT-5.6 was the main model behind the build. It worked through the product decisions with me, inspected the actual Codex app mechanics, implemented the Swift companion and prompt hook, debugged the native pet renderer from live logs, generated the visual assets, ran the 214-test suite, and verified the real WHOOP flow end to end.
+
+The pet proof modifies an isolated copy of the Codex renderer. It does not modify my everyday Codex app.
 
 The related note on visual reasoning is [Thinking in Images](https://x.com/RandyHaddad6/status/2069842784106971341?s=20).
